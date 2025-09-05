@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+.tmp/
+*.log
+*.tmp
+*.swp
+*.swo
+convert-env/

@@ -1,0 +1,8 @@
+fastapi==0.114.2
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pydantic==2.9.2
+python-magic-bin==0.4.14 ; platform_system == "Windows"
+python-magic==0.4.27 ; platform_system != "Windows"
+filetype==1.2.0
+python-dotenv==1.0.1

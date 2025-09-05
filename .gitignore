@@ -1,0 +1,102 @@
+# Root .gitignore for converter-poc
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Node / Next.js (ui/) ---
+node_modules/
+.next/
+.nextcache/
+out/
+.vercel/
+.turbo/
+.npm/
+.pnpm-store/
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+
+# Env files
+.env
+.env.*
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# --- Python (backend/) ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+.eggs/
+parts/
+var/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Project local virtual env
+convert-env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.pytest_cache/
+
+# --- Misc ---
+*.sqlite3
+*.db
+*.sqlite
+
+# Local files not meant for version control
+*.bak
+*.tmp
+~$*
