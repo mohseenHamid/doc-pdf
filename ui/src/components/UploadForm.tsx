@@ -41,8 +41,9 @@ export default function UploadForm({ onUploaded }: { onUploaded?: (id: string) =
       onUploaded?.(id);
       if (inputRef.current) inputRef.current.value = "";
       setSelected(null);
-    } catch (err: any) {
-      setError(err?.message || "Conversion failed");
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "Conversion failed";
+      setError(message);
     } finally {
       setUploading(false);
     }
