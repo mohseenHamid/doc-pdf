@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  /* NHS-inspired dark theme */
+  --background: #0a0f14; /* deep navy */
+  --surface: #0f1620;    /* card/table bg */
+  --surface-2: #101a26;  /* header/thead bg */
+  --border: #1f2a37;     /* subtle borders */
+  --foreground: #e5e7eb; /* light text */
+
+  --nhs-blue: #005EB8;
+  --nhs-blue-dark: #003087;
+  --nhs-blue-bright: #0072CE;
+  --nhs-aqua: #41B6E6;
+}
+
+/* Tailwind v4 supports using CSS variables directly in class utilities */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
